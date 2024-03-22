@@ -4,7 +4,7 @@ namespace BookStore2024.Controllers
 {
     public class ProductsController : Controller
     {
-        public IActionResult Index()
+        public IActionResult Index(int? category)
         {
             return View();
         }
