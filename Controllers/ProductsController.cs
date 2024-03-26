@@ -26,8 +26,9 @@ namespace BookStore2024.Controllers
 				ProductImg = p.BookImageUrl ?? "",
 				AuthorName = p.AuthorName,
 				Price = p.Price,
-				Discount = p.Discount
-			});
+				Discount = p.Discount,
+                FormatName = p.FormatName
+            });
 
             return View(data);
         }
