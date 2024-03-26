@@ -883,3 +883,19 @@ FROM
 JOIN 
     tbl_author A ON B.author_id = A.author_id;
 GO
+---View cho biết số lượng blog mà 1 tác giả viết
+GO
+CREATE VIEW ViewTopBloger AS
+SELECT 
+	A.author_id,
+	A.author_name,
+	A.profile_image_url,
+	COUNT(B.blog_id) AS num_blogs
+FROM
+	tbl_Author A
+JOIN 
+	tbl_Blog B ON A.author_id = B.author_id
+GROUP BY 
+    A.author_id, A.author_name,A.profile_image_url
+
+
