@@ -865,3 +865,21 @@ JOIN
     tbl_Book B ON BD.book_id = B.book_id
 JOIN 
     tbl_Format F ON BD.format_id = F.format_id;
+
+GO
+---thông tin chi tiết của 1 blog-post
+CREATE VIEW ViewBlogDetail AS
+SELECT 
+    B.blog_id,
+    B.blog_title AS blog_title,
+	B.blog_description_,
+    B.content_ AS blog_content,
+    B.author_id,
+    A.author_name,
+	B.img_url,
+	B.views_
+FROM 
+    tbl_blog B
+JOIN 
+    tbl_author A ON B.author_id = A.author_id;
+GO

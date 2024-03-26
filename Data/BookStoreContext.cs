@@ -43,6 +43,8 @@ public partial class BookStoreContext : DbContext
 
     public virtual DbSet<ViewOrderDetail> ViewOrderDetails { get; set; }
 
+    public virtual DbSet<ViewBlogDetail> ViewBlogDetail { get; set; }
+
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see https://go.microsoft.com/fwlink/?LinkId=723263.
         => optionsBuilder.UseSqlServer("Data Source=.;Initial Catalog=BookStore;Integrated Security=True;Trust Server Certificate=True");
@@ -431,6 +433,21 @@ public partial class BookStoreContext : DbContext
                 .HasMaxLength(50)
                 .HasColumnName("user_name_");
         });
+        ///////////////////////////////////////
+        modelBuilder.Entity<ViewBlogDetail>(entity =>
+        {
+            entity.HasNoKey().ToView("ViewBlogDetail");
+
+            entity.Property(e => e.BlogId).HasColumnName("blog_id");
+            entity.Property(e => e.BlogTitle).HasColumnName("blog_title").HasMaxLength(255);
+            entity.Property(e => e.BlogDescription).HasColumnName("blog_description_").HasMaxLength(1000);
+            entity.Property(e => e.BlogContent).HasColumnName("blog_content");
+            entity.Property(e => e.AuthorId).HasColumnName("author_id");
+            entity.Property(e => e.AuthorName).HasColumnName("author_name").HasMaxLength(255);
+            entity.Property(e => e.BlogImageUrl).HasColumnName("img_url").HasMaxLength(255).IsUnicode(false);
+            entity.Property(e => e.Views).HasColumnName("views_");
+        });
+
 
         OnModelCreatingPartial(modelBuilder);
     }
