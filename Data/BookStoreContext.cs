@@ -46,6 +46,8 @@ public partial class BookStoreContext : DbContext
     public virtual DbSet<ViewBlogDetail> ViewBlogDetail { get; set; }
 
     public virtual DbSet<ViewTopBloger> ViewTopBloger { get; set; }
+
+    public virtual DbSet<ViewBookAlert> ViewBookAlert { get; set; }
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see https://go.microsoft.com/fwlink/?LinkId=723263.
         => optionsBuilder.UseSqlServer("Data Source=.;Initial Catalog=BookStore;Integrated Security=True;Trust Server Certificate=True");
@@ -459,7 +461,23 @@ public partial class BookStoreContext : DbContext
                 .HasColumnName("profile_image_url");
             entity.Property(e => e.NumbersOfPost).HasColumnName("num_blogs");
         });
+        modelBuilder.Entity<ViewBookAlert>(entity =>
+        {
+            entity.HasNoKey().ToView("ViewBookAlert");
 
+            entity.Property(e => e.BookDetailId).HasColumnName("Book_Detail_id");
+            entity.Property(e => e.BookTitle)
+                .HasMaxLength(255)
+                .HasColumnName("book_title");
+            entity.Property(e => e.AuthorName).HasColumnName("author_name").HasMaxLength(255);
+            entity.Property(e => e.BookImageUrl).HasMaxLength(255)
+                .IsUnicode(false)
+                .HasColumnName("book_image_url");
+            entity.Property(e => e.Price).HasColumnName("price");
+            entity.Property(e => e.Discount).HasColumnName("discount");
+        });
+
+        /////////////////////////////////////////////////////////////////////////////////////////////
         OnModelCreatingPartial(modelBuilder);
     }
 

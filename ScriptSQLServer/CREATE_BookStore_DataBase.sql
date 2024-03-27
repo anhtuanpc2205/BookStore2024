@@ -129,7 +129,9 @@ INSERT INTO tbl_Genre(genre_name) VALUES
 ('Art Form');
 ---User
 INSERT INTO tbl_User(user_name_, email, password_, shipping_address, role_, profile_image_url)
-VALUES ('Trần Ngọc Anh Tuấn', 'ngocanhtuan2205@gmail.com', '123', '32 Hải Thượng Lãn Ông, Tp Vinh', 1, 'images/users/img-01.jpg');
+VALUES (N'Trần Ngọc Anh Tuấn', 'ngocanhtuan2205@gmail.com', '123', N'32 Hải Thượng Lãn Ông, Tp Vinh', 1, 'images/users/img-01.jpg'),
+(N'Nguyễn Văn Hoàng ', 'abc@gmail.com', '123', N'32 Hải Thượng Lãn Ông, Tp Vinh', 2, 'images/users/img-01.jpg'),
+(N'Con Mèo Lem Nhem', 'ng2205@gmail.com', '123', N'32 Hải Thượng Lãn Ông, Tp Vinh', 3, 'images/users/img-01.jpg');
 ---Author
 INSERT INTO tbl_Author(author_name, author_description_, profile_image_url) VALUES 
 ('John Smith', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.', 'images/author/img-01.jpg'),
@@ -733,13 +735,25 @@ VALUES
     20, -- Số lượng trong kho của cuốn sách
     6.99 -- Giá của cuốn sách
 );
-UPDATE tbl_Book_Detail
-SET price = price - 5
-WHERE book_id IN (3, 5, 7);
+
+---insert các order
+INSERT INTO tbl_Order (user_id_, order_date, total_amount, order_status, shipping_method, payment_method, shipping_fee)
+VALUES (1, '2024-03-27', 100.00, N'Đang xử lý', N'Giao hàng tiêu chuẩn', 1, 5.00);
+
+-- Lấy ID của đơn hàng vừa thêm vào
+DECLARE @order_id INT;
+SET @order_id = SCOPE_IDENTITY();
+
+-- Thêm các mục trong đơn hàng vào tbl_Order_Detail
+INSERT INTO tbl_Order_Detail (order_id, book_Detail_id, quantity)
+VALUES 
+    (@order_id, 1, 2),  -- Đặt 2 cuốn sách có ID là 1 vào đơn hàng
+    (@order_id, 3, 1);  -- Đặt 1 cuốn sách có ID là 3 vào đơn hàng
+
 
 UPDATE tbl_Book_Detail
-SET price = price - 8
-WHERE book_id IN (1, 10, 11);
+SET discount = price/5
+WHERE price%3 = 0
 
 GO
 
@@ -897,5 +911,41 @@ JOIN
 	tbl_Blog B ON A.author_id = B.author_id
 GROUP BY 
     A.author_id, A.author_name,A.profile_image_url
-
+GO
+---View tìm cuốn sách có số lượng mua lớn nhất
+CREATE VIEW ViewBookAlert AS
+SELECT 
+    VOD.Book_Detail_id,
+    VOD.book_title,
+    VOD.total_quantity_sold,
+    B.book_image_url,
+    A.author_name,
+    BD.price,
+    BD.discount
+FROM (
+    SELECT 
+        Book_Detail_id,
+        book_title,
+        SUM(quantity) AS total_quantity_sold
+    FROM 
+        ViewOrderDetails
+    GROUP BY 
+        Book_Detail_id, book_title
+) AS VOD 
+JOIN tbl_Book_Detail BD ON VOD.Book_Detail_id = BD.Book_Detail_id
+JOIN tbl_Book B ON BD.book_id = B.book_id
+JOIN tbl_Author A ON B.author_id = A.author_id
+WHERE VOD.total_quantity_sold = (
+    SELECT MAX(total_quantity_sold)
+    FROM (
+        SELECT 
+            Book_Detail_id,
+            SUM(quantity) AS total_quantity_sold
+        FROM 
+            ViewOrderDetails
+        GROUP BY 
+            Book_Detail_id
+    ) AS VOD
+);
+GO
 
