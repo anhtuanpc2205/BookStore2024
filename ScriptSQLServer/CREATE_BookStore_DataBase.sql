@@ -396,7 +396,7 @@ VALUES (
 	 'Educated: A Memoir', -- Tiêu đề của sách
     1, -- ID của tác giả
     '../images/books/img-02.jpg', -- Đường dẫn đến ảnh bìa của sách
-    '"Educated" là một cuốn hồi ký của Tara Westover, kể về cuộc sống của cô trong một gia đình mormon cực kỳ cứng rắn ở Idaho. Tara không được học hành chính thống, nhưng thông qua sự tự học và nỗ lực không ngừng, cô đã tự mình học được và sau đó tốt nghiệp đại học và cao học tại Đại học Harvard và Đại học Cambridge. Cuốn sách tường thuật về hành trình vượt qua nghịch cảnh và tìm kiếm sự giáo dục và tự do cá nhân của Tara.', -- Mô tả về sách
+    N'"Educated" là một cuốn hồi ký của Tara Westover, kể về cuộc sống của cô trong một gia đình mormon cực kỳ cứng rắn ở Idaho. Tara không được học hành chính thống, nhưng thông qua sự tự học và nỗ lực không ngừng, cô đã tự mình học được và sau đó tốt nghiệp đại học và cao học tại Đại học Harvard và Đại học Cambridge. Cuốn sách tường thuật về hành trình vượt qua nghịch cảnh và tìm kiếm sự giáo dục và tự do cá nhân của Tara.', -- Mô tả về sách
     'Sunshine Orlando', -- Nhà xuất bản
     'English', -- Ngôn ngữ
     'b&w images thru-out; 1 x 16pp colour plates', -- Ghi chú về minh họa
@@ -408,7 +408,7 @@ VALUES (
 	 'The Great Gatsby', -- Tiêu đề của sách
     3, -- ID của tác giả
     '../images/books/img-03.jpg', -- Đường dẫn đến ảnh bìa của sách
-    '"The Great Gatsby" là một câu chuyện kinh điển về cuộc sống ở thị trấn West Egg trên Long Island vào những năm 1920. Câu chuyện được kể qua góc nhìn của Nick Carraway, một nhân chứng về cuộc sống xa hoa và những khao khát đen tối của Jay Gatsby.',
+    N'"The Great Gatsby" là một câu chuyện kinh điển về cuộc sống ở thị trấn West Egg trên Long Island vào những năm 1920. Câu chuyện được kể qua góc nhìn của Nick Carraway, một nhân chứng về cuộc sống xa hoa và những khao khát đen tối của Jay Gatsby.',
     'Scribner', -- Nhà xuất bản
     'English', -- Ngôn ngữ
     'b&w images thru-out; 1 x 16pp colour plates', -- Ghi chú về minh họa
@@ -420,7 +420,7 @@ VALUES (
 	 'To Kill a Mockingbird', -- Tiêu đề của sách
     4, -- ID của tác giả
     '../images/books/img-04.jpg', -- Đường dẫn đến ảnh bìa của sách
-    '"To Kill a Mockingbird" là một tiểu thuyết kinh điển về sự phân biệt chủng tộc và sự nghèo đói ở Nam Hoa Kỳ trong những năm 1930. Câu chuyện được kể qua góc nhìn của Scout Finch, một cô bé ở thị trấn nhỏ Maycomb, Alabama, khi bố cô làm luật sư để bảo vệ một người đàn ông da đen bị cáo buộc giao cấu với một phụ nữ da trắng.',
+    N'"To Kill a Mockingbird" là một tiểu thuyết kinh điển về sự phân biệt chủng tộc và sự nghèo đói ở Nam Hoa Kỳ trong những năm 1930. Câu chuyện được kể qua góc nhìn của Scout Finch, một cô bé ở thị trấn nhỏ Maycomb, Alabama, khi bố cô làm luật sư để bảo vệ một người đàn ông da đen bị cáo buộc giao cấu với một phụ nữ da trắng.',
     'J.B. Lippincott & Co.', -- Nhà xuất bản
     'English', -- Ngôn ngữ
     'b&w images thru-out; 1 x 16pp colour plates', -- Ghi chú về minh họa
@@ -432,7 +432,7 @@ VALUES (
 	 'Pride and Prejudice', -- Tiêu đề của sách
     5, -- ID của tác giả
     '../images/books/img-05.jpg', -- Đường dẫn đến ảnh bìa của sách
-    '"Pride and Prejudice" là một tiểu thuyết lãng mạn về tình yêu, gia đình và xã hội ở thế kỷ 19 ở Anh. Câu chuyện xoay quanh cuộc sống của Elizabeth Bennet, một cô gái thông minh và nhanh nhạy, khi cô đấu tranh với lòng tự trọng và sự định kiến xã hội.',
+    N'"Pride and Prejudice" là một tiểu thuyết lãng mạn về tình yêu, gia đình và xã hội ở thế kỷ 19 ở Anh. Câu chuyện xoay quanh cuộc sống của Elizabeth Bennet, một cô gái thông minh và nhanh nhạy, khi cô đấu tranh với lòng tự trọng và sự định kiến xã hội.',
     'T. Egerton, Whitehall', -- Nhà xuất bản
     'English', -- Ngôn ngữ
     'b&w images thru-out; 1 x 16pp colour plates', -- Ghi chú về minh họa
@@ -444,7 +444,7 @@ VALUES (
 	 'Harry Potter and the Sorcerer''s Stone', -- Tiêu đề của sách
     5, -- ID của tác giả
     '../images/books/img-06.jpg', -- Đường dẫn đến ảnh bìa của sách
-    '"Pride and Prejudice" là một tiểu thuyết lãng mạn về tình yêu, gia đình và xã hội ở thế kỷ 19 ở Anh. Câu chuyện xoay quanh cuộc sống của Elizabeth Bennet, một cô gái thông minh và nhanh nhạy, khi cô đấu tranh với lòng tự trọng và sự định kiến xã hội.',
+    N'"Pride and Prejudice" là một tiểu thuyết lãng mạn về tình yêu, gia đình và xã hội ở thế kỷ 19 ở Anh. Câu chuyện xoay quanh cuộc sống của Elizabeth Bennet, một cô gái thông minh và nhanh nhạy, khi cô đấu tranh với lòng tự trọng và sự định kiến xã hội.',
     ' Scholastic', -- Nhà xuất bản
     'English', -- Ngôn ngữ
     'b&w images thru-out; 1 x 16pp colour plates', -- Ghi chú về minh họa
@@ -456,7 +456,7 @@ VALUES (
 	 'The Catcher in the Rye', -- Tiêu đề của sách
     7, -- ID của tác giả
     '../images/books/img-07.jpg', -- Đường dẫn đến ảnh bìa của sách
-    '"The Catcher in the Rye" là một tiểu thuyết về tuổi trẻ và sự mất mát của ngây thơ. Câu chuyện được kể qua góc nhìn của Holden Caulfield, một thiếu niên cảm thấy loài người xung quanh đều giả dối và thiếu chân thành.',
+    N'"The Catcher in the Rye" là một tiểu thuyết về tuổi trẻ và sự mất mát của ngây thơ. Câu chuyện được kể qua góc nhìn của Holden Caulfield, một thiếu niên cảm thấy loài người xung quanh đều giả dối và thiếu chân thành.',
     'Little, Brown and Company', -- Nhà xuất bản
     'English', -- Ngôn ngữ
     'b&w images thru-out; 1 x 16pp colour plates', -- Ghi chú về minh họa
@@ -468,7 +468,7 @@ VALUES (
 	 'The Catcher in the Rye', -- Tiêu đề của sách
     7, -- ID của tác giả
     '../images/books/img-08.jpg', -- Đường dẫn đến ảnh bìa của sách
-    '"The Catcher in the Rye" là một tiểu thuyết về tuổi trẻ và sự mất mát của ngây thơ. Câu chuyện được kể qua góc nhìn của Holden Caulfield, một thiếu niên cảm thấy loài người xung quanh đều giả dối và thiếu chân thành.',
+    N'"The Catcher in the Rye" là một tiểu thuyết về tuổi trẻ và sự mất mát của ngây thơ. Câu chuyện được kể qua góc nhìn của Holden Caulfield, một thiếu niên cảm thấy loài người xung quanh đều giả dối và thiếu chân thành.',
     'Little, Brown and Company', -- Nhà xuất bản
     'English', -- Ngôn ngữ
     'b&w images thru-out; 1 x 16pp colour plates', -- Ghi chú về minh họa
@@ -480,7 +480,7 @@ VALUES (
 	 'The Lord of the Rings', -- Tiêu đề của sách
     8, -- ID của tác giả
     '../images/books/img-09.jpg', -- Đường dẫn đến ảnh bìa của sách
-    '"The Lord of the Rings" là một cuộc phiêu lưu kỳ diệu trải dài qua thế giới Middle-earth, xoay quanh chiến đấu giữa tốt và ác, sự tiêu diệt và hy vọng. Câu chuyện bắt đầu khi Frodo Baggins, một người hobbit, nhận được nhiệm vụ tiêu diệt chiếc nhẫn của Sauron.',
+    N'"The Lord of the Rings" là một cuộc phiêu lưu kỳ diệu trải dài qua thế giới Middle-earth, xoay quanh chiến đấu giữa tốt và ác, sự tiêu diệt và hy vọng. Câu chuyện bắt đầu khi Frodo Baggins, một người hobbit, nhận được nhiệm vụ tiêu diệt chiếc nhẫn của Sauron.',
     'Allen & Unwin', -- Nhà xuất bản
     'English', -- Ngôn ngữ
     'b&w images thru-out; 1 x 16pp colour plates', -- Ghi chú về minh họa
@@ -492,7 +492,7 @@ VALUES (
 	 'Animal Farm', -- Tiêu đề của sách
     10, -- ID của tác giả
     '../images/books/img-10.jpg', -- Đường dẫn đến ảnh bìa của sách
-    '"Animal Farm" là một tiểu thuyết truyền cảm hứng về sự cải cách xã hội và quyền lực. Câu chuyện diễn ra tại một trang trại nông nghiệp, nơi các loài động vật lập ra một xã hội đa đảng và chống lại sự thống trị của con người.',
+    N'"Animal Farm" là một tiểu thuyết truyền cảm hứng về sự cải cách xã hội và quyền lực. Câu chuyện diễn ra tại một trang trại nông nghiệp, nơi các loài động vật lập ra một xã hội đa đảng và chống lại sự thống trị của con người.',
     'Secker and Warburg', -- Nhà xuất bản
     'English', -- Ngôn ngữ
     'b&w images thru-out; 1 x 16pp colour plates', -- Ghi chú về minh họa
@@ -504,7 +504,7 @@ VALUES (
 	 'The Alchemist', -- Tiêu đề của sách
     10, -- ID của tác giả
     '../images/books/img-11.jpg', -- Đường dẫn đến ảnh bìa của sách
-    '"The Alchemist" là một tiểu thuyết triết học về tình yêu, sự hiểu biết và cuộc sống. Câu chuyện theo chân Santiago, một chăn cừu ở Tây Ban Nha, trong cuộc hành trình đi tìm kiếm ngọc lục bảo và ý nghĩa thực sự của cuộc sống.',
+    N'"The Alchemist" là một tiểu thuyết triết học về tình yêu, sự hiểu biết và cuộc sống. Câu chuyện theo chân Santiago, một chăn cừu ở Tây Ban Nha, trong cuộc hành trình đi tìm kiếm ngọc lục bảo và ý nghĩa thực sự của cuộc sống.',
     'HarperCollins', -- Nhà xuất bản
     'English', -- Ngôn ngữ
     'b&w images thru-out; 1 x 16pp colour plates', -- Ghi chú về minh họa
@@ -516,7 +516,7 @@ VALUES (
 	 'The Chronicles of Narnia: The Lion, the Witch and the Wardrobe', -- Tiêu đề của sách
     12, -- ID của tác giả
     '../images/books/img-12.jpg', -- Đường dẫn đến ảnh bìa của sách
-    '"The Chronicles of Narnia: The Lion, the Witch and the Wardrobe" là một cuốn sách truyền kỳ về cuộc phiêu lưu của bốn đứa trẻ trong thế giới ma thuật của Narnia. Cuốn sách khám phá chủ đề về lòng dũng cảm, lòng tin và sự kiên nhẫn.',
+    N'"The Chronicles of Narnia: The Lion, the Witch and the Wardrobe" là một cuốn sách truyền kỳ về cuộc phiêu lưu của bốn đứa trẻ trong thế giới ma thuật của Narnia. Cuốn sách khám phá chủ đề về lòng dũng cảm, lòng tin và sự kiên nhẫn.',
     'Geoffrey Bles', -- Nhà xuất bản
     'English', -- Ngôn ngữ
     'b&w images thru-out; 1 x 16pp colour plates', -- Ghi chú về minh họa
@@ -750,6 +750,33 @@ VALUES
     (@order_id, 1, 2),  -- Đặt 2 cuốn sách có ID là 1 vào đơn hàng
     (@order_id, 3, 1);  -- Đặt 1 cuốn sách có ID là 3 vào đơn hàng
 
+INSERT INTO tbl_Order (user_id_, order_date, total_amount, order_status, shipping_method, payment_method, shipping_fee)
+VALUES
+(2, '2024-03-28', 150.00, N'Hoàn tất', N'Giao hàng tiêu chuẩn', 1, 5.00),
+(2, '2024-03-29', 160.00, N'Hoàn tất', N'Giao hàng tiêu chuẩn', 2, 8.00),
+(2, '2024-03-30', 170.00, N'Hoàn tất', N'Giao hàng tiêu chuẩn', 1, 6.00);
+
+-- Đơn hàng 1
+INSERT INTO tbl_Order_Detail (order_id, book_Detail_id, quantity)
+VALUES
+(1, 1, 3),  -- Ví dụ: Mua 3 cuốn sách có book_Detail_id là 1
+(1, 2, 3),
+(1, 3, 3);
+
+-- Đơn hàng 2
+INSERT INTO tbl_Order_Detail (order_id, book_Detail_id, quantity)
+VALUES
+(2, 4, 3),  -- Ví dụ: Mua 3 cuốn sách có book_Detail_id là 4
+(2, 5, 3),
+(2, 6, 3);
+
+-- Đơn hàng 3
+INSERT INTO tbl_Order_Detail (order_id, book_Detail_id, quantity)
+VALUES
+(3, 7, 3),  -- Ví dụ: Mua 3 cuốn sách có book_Detail_id là 7
+(3, 8, 3),
+(3, 9, 3);
+
 
 UPDATE tbl_Book_Detail
 SET discount = price/5
@@ -757,7 +784,7 @@ WHERE price >= 15
 
 UPDATE tbl_Book_Detail
 SET views_ = 30
-WHERE price >= 1
+WHERE price >= 15
 
 GO
 
