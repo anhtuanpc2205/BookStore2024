@@ -15,7 +15,6 @@ namespace BookStore2024.Controllers
             if(category.HasValue)
             {
 				ProductsQuery = ProductsQuery.Where(p => p.CategoryId == category.Value);
-
 			}
 
             var data = ProductsQuery.Select(p => new ProductVM
@@ -27,6 +26,26 @@ namespace BookStore2024.Controllers
 				AuthorName = p.AuthorName,
 				Price = p.Price,
 				Discount = p.Discount,
+                FormatName = p.FormatName
+            });
+
+            return View(data);
+        }
+        public IActionResult Search(String? searchString)
+        {
+            var ProductsQuery = DBContext.ViewBookDetails.AsQueryable();
+            if (searchString != null) {
+                ProductsQuery = ProductsQuery.Where(p => p.BookTitle.Contains(searchString));
+            }
+            var data = ProductsQuery.Select(p => new ProductVM
+            {
+                CategoryId = p.CategoryId,
+                CategoryName = p.CategoryName,
+                ProductName = p.BookTitle,
+                ProductImg = p.BookImageUrl ?? "",
+                AuthorName = p.AuthorName,
+                Price = p.Price,
+                Discount = p.Discount,
                 FormatName = p.FormatName
             });
 

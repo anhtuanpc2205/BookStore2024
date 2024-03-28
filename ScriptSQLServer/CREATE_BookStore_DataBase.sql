@@ -129,37 +129,37 @@ INSERT INTO tbl_Genre(genre_name) VALUES
 ('Art Form');
 ---User
 INSERT INTO tbl_User(user_name_, email, password_, shipping_address, role_, profile_image_url)
-VALUES (N'Trần Ngọc Anh Tuấn', 'ngocanhtuan2205@gmail.com', '123', N'32 Hải Thượng Lãn Ông, Tp Vinh', 1, 'images/users/img-01.jpg'),
-(N'Nguyễn Văn Hoàng ', 'abc@gmail.com', '123', N'32 Hải Thượng Lãn Ông, Tp Vinh', 2, 'images/users/img-01.jpg'),
-(N'Con Mèo Lem Nhem', 'ng2205@gmail.com', '123', N'32 Hải Thượng Lãn Ông, Tp Vinh', 3, 'images/users/img-01.jpg');
+VALUES (N'Trần Ngọc Anh Tuấn', 'ngocanhtuan2205@gmail.com', '123', N'32 Hải Thượng Lãn Ông, Tp Vinh', 1, '../images/users/img-01.jpg'),
+(N'Nguyễn Văn Hoàng ', 'abc@gmail.com', '123', N'32 Hải Thượng Lãn Ông, Tp Vinh', 2, '../images/users/img-01.jpg'),
+(N'Con Mèo Lem Nhem', 'ng2205@gmail.com', '123', N'32 Hải Thượng Lãn Ông, Tp Vinh', 3, '../images/users/img-01.jpg');
 ---Author
 INSERT INTO tbl_Author(author_name, author_description_, profile_image_url) VALUES 
-('John Smith', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.', 'images/author/img-01.jpg'),
-('Emily Johnson', 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.', 'images/author/imag-02.jpg'),
-('Michael Brown', 'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores.', 'images/author/imag-03.jpg'),
-('Sarah Williams', 'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.', 'images/author/imag-04.jpg'),
-('David Jones', 'Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.', 'images/author/imag-05.jpg'),
-('Jessica Taylor', 'Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.', 'images/author/imag-06.jpg'),
-('Christopher Lee', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', 'images/author/imag-07.jpg'),
-('Olivia Martin', 'Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?', 'images/author/imag-08.jpg'),
-('Matthew Wilson', 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.', 'images/author/imag-09.jpg'),
-('Sophia Clark', 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.', 'images/author/imag-10.jpg'),
-('Ethan Moore', 'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.', 'images/author/img-11.jpg'),
-('Isabella White', 'Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.', 'images/author/imag-12.jpg'),
-('Alexander Hall', 'Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.', 'images/author/imag-13.jpg'),
-('Ava Thompson', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', 'images/author/imag-14.jpg'),
-('William Davis', 'Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?', 'images/author/imag-15.jpg'),
-('Mia Rodriguez', 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.', 'images/author/imag-16.jpg'),
-('James Martinez', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', 'images/author/imag-17.jpg'),
-('Emma Anderson', 'Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?', 'images/author/imag-18.jpg'),
-('Benjamin Garcia', 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.', 'images/author/imag-19.jpg'),
-('Charlotte Hernandez', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', 'images/author/imag-20.jpg'),
-('Jacob Lopez', 'Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?', 'images/author/imag-21.jpg'),
-('Amelia Nelson', 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.', 'images/author/imag-22.jpg'),
-('Daniel King', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', 'images/author/imag-23.jpg'),
-('Harper Carter', 'Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?', 'images/author/imag-24.jpg'),
-('Scarlet Hawthorne', 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.', 'images/author/imag-25.jpg'),
-('Evelyn Ramirez', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', 'images/author/imag-26.jpg');
+('John Smith', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.', '../images/author/imag-01.jpg'),
+('Emily Johnson', 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.', '../images/author/imag-02.jpg'),
+('Michael Brown', 'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores.', '../images/author/imag-03.jpg'),
+('Sarah Williams', 'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.', '../images/author/imag-04.jpg'),
+('David Jones', 'Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.', '../images/author/imag-05.jpg'),
+('Jessica Taylor', 'Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.', '../images/author/imag-06.jpg'),
+('Christopher Lee', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', '../images/author/imag-07.jpg'),
+('Olivia Martin', 'Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?', '../images/author/imag-08.jpg'),
+('Matthew Wilson', 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.', '../images/author/imag-09.jpg'),
+('Sophia Clark', 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.', '../images/author/imag-10.jpg'),
+('Ethan Moore', 'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.', '../images/author/img-11.jpg'),
+('Isabella White', 'Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.', '../images/author/imag-12.jpg'),
+('Alexander Hall', 'Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.', '../images/author/imag-13.jpg'),
+('Ava Thompson', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', '../images/author/imag-14.jpg'),
+('William Davis', 'Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?', '../images/author/imag-15.jpg'),
+('Mia Rodriguez', 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.', '../images/author/imag-16.jpg'),
+('James Martinez', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', '../images/author/imag-17.jpg'),
+('Emma Anderson', 'Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?', '../images/author/imag-18.jpg'),
+('Benjamin Garcia', 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.', '../images/author/imag-19.jpg'),
+('Charlotte Hernandez', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', '../images/author/imag-20.jpg'),
+('Jacob Lopez', 'Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?', '../images/author/imag-21.jpg'),
+('Amelia Nelson', 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.', '../images/author/imag-22.jpg'),
+('Daniel King', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', '../images/author/imag-23.jpg'),
+('Harper Carter', 'Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?', '../images/author/imag-24.jpg'),
+('Scarlet Hawthorne', 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.', '../images/author/imag-25.jpg'),
+('Evelyn Ramirez', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', '../images/author/imag-26.jpg');
 ---Format_
 INSERT INTO tbl_Format(format_name) VALUES 
 ('Hardback'),
@@ -179,7 +179,7 @@ Labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitatio
 
 Laborum sed ut perspiciatis unde omnis iste natus sit voluptatem accusantium doloremque laudantium totam rem aperiam eaque ipsa quae ab illo inventore veritatis etation quasi architecto beatae.',
     1, -- ID của tác giả
-    'images/blog/img-01.jpg', -- Đường dẫn đến hình ảnh
+    '../images/blog/img-01.jpg', -- Đường dẫn đến hình ảnh
     DEFAULT -- Giá trị mặc định cho views_
 ),
 (
@@ -193,7 +193,7 @@ Labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitatio
 
 Laborum sed ut perspiciatis unde omnis iste natus sit voluptatem accusantium doloremque laudantium totam rem aperiam eaque ipsa quae ab illo inventore veritatis etation quasi architecto beatae.',
     2, -- ID của tác giả
-    'images/blog/img-02.jpg', -- Đường dẫn đến hình ảnh
+    '../images/blog/img-02.jpg', -- Đường dẫn đến hình ảnh
     DEFAULT -- Giá trị mặc định cho views_
 ),
 (
@@ -207,7 +207,7 @@ Labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitatio
 
 Laborum sed ut perspiciatis unde omnis iste natus sit voluptatem accusantium doloremque laudantium totam rem aperiam eaque ipsa quae ab illo inventore veritatis etation quasi architecto beatae.',
     3, -- ID của tác giả
-    'images/blog/img-03.jpg', -- Đường dẫn đến hình ảnh
+    '../images/blog/img-03.jpg', -- Đường dẫn đến hình ảnh
     DEFAULT -- Giá trị mặc định cho views_
 ),
 (
@@ -221,7 +221,7 @@ Labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitatio
 
 Laborum sed ut perspiciatis unde omnis iste natus sit voluptatem accusantium doloremque laudantium totam rem aperiam eaque ipsa quae ab illo inventore veritatis etation quasi architecto beatae.',
     4, -- ID của tác giả
-    'images/blog/img-04.jpg', -- Đường dẫn đến hình ảnh
+    '../images/blog/img-04.jpg', -- Đường dẫn đến hình ảnh
     DEFAULT -- Giá trị mặc định cho views_
 ),
 (
@@ -235,7 +235,7 @@ Labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitatio
 
 Laborum sed ut perspiciatis unde omnis iste natus sit voluptatem accusantium doloremque laudantium totam rem aperiam eaque ipsa quae ab illo inventore veritatis etation quasi architecto beatae.',
     5, -- ID của tác giả
-    'images/blog/img-05.jpg', -- Đường dẫn đến hình ảnh
+    '../images/blog/img-05.jpg', -- Đường dẫn đến hình ảnh
     DEFAULT -- Giá trị mặc định cho views_
 ),
 (
@@ -249,7 +249,7 @@ Labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitatio
 
 Laborum sed ut perspiciatis unde omnis iste natus sit voluptatem accusantium doloremque laudantium totam rem aperiam eaque ipsa quae ab illo inventore veritatis etation quasi architecto beatae.',
     6, -- ID của tác giả
-    'images/blog/img-06.jpg', -- Đường dẫn đến hình ảnh
+    '../images/blog/img-06.jpg', -- Đường dẫn đến hình ảnh
     DEFAULT -- Giá trị mặc định cho views_
 ),
 (
@@ -263,7 +263,7 @@ Labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitatio
 
 Laborum sed ut perspiciatis unde omnis iste natus sit voluptatem accusantium doloremque laudantium totam rem aperiam eaque ipsa quae ab illo inventore veritatis etation quasi architecto beatae.',
     7, -- ID của tác giả
-    'images/blog/img-07.jpg', -- Đường dẫn đến hình ảnh
+    '../images/blog/img-07.jpg', -- Đường dẫn đến hình ảnh
     DEFAULT -- Giá trị mặc định cho views_
 ),
 (
@@ -277,7 +277,7 @@ Labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitatio
 
 Laborum sed ut perspiciatis unde omnis iste natus sit voluptatem accusantium doloremque laudantium totam rem aperiam eaque ipsa quae ab illo inventore veritatis etation quasi architecto beatae.',
     8, -- ID của tác giả
-    'images/blog/img-08.jpg', -- Đường dẫn đến hình ảnh
+    '../images/blog/img-08.jpg', -- Đường dẫn đến hình ảnh
     DEFAULT -- Giá trị mặc định cho views_
 ),
 (
@@ -291,7 +291,7 @@ Labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitatio
 
 Laborum sed ut perspiciatis unde omnis iste natus sit voluptatem accusantium doloremque laudantium totam rem aperiam eaque ipsa quae ab illo inventore veritatis etation quasi architecto beatae.',
     9, -- ID của tác giả
-    'images/blog/img-09.jpg', -- Đường dẫn đến hình ảnh
+    '../images/blog/img-09.jpg', -- Đường dẫn đến hình ảnh
     DEFAULT -- Giá trị mặc định cho views_
 ),
 (
@@ -305,7 +305,7 @@ Labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitatio
 
 Laborum sed ut perspiciatis unde omnis iste natus sit voluptatem accusantium doloremque laudantium totam rem aperiam eaque ipsa quae ab illo inventore veritatis etation quasi architecto beatae.',
     10, -- ID của tác giả
-    'images/blog/img-10.jpg', -- Đường dẫn đến hình ảnh
+    '../images/blog/img-10.jpg', -- Đường dẫn đến hình ảnh
     DEFAULT -- Giá trị mặc định cho views_
 ),
 (
@@ -319,7 +319,7 @@ Labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitatio
 
 Laborum sed ut perspiciatis unde omnis iste natus sit voluptatem accusantium doloremque laudantium totam rem aperiam eaque ipsa quae ab illo inventore veritatis etation quasi architecto beatae.',
     11, -- ID của tác giả
-    'images/blog/img-11.jpg', -- Đường dẫn đến hình ảnh
+    '../images/blog/img-11.jpg', -- Đường dẫn đến hình ảnh
     DEFAULT -- Giá trị mặc định cho views_
 ),
 (
@@ -333,7 +333,7 @@ Labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitatio
 
 Laborum sed ut perspiciatis unde omnis iste natus sit voluptatem accusantium doloremque laudantium totam rem aperiam eaque ipsa quae ab illo inventore veritatis etation quasi architecto beatae.',
     12, -- ID của tác giả
-    'images/blog/img-12.jpg', -- Đường dẫn đến hình ảnh
+    '../images/blog/img-12.jpg', -- Đường dẫn đến hình ảnh
     DEFAULT -- Giá trị mặc định cho views_
 ),
 (
@@ -347,7 +347,7 @@ Labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitatio
 
 Laborum sed ut perspiciatis unde omnis iste natus sit voluptatem accusantium doloremque laudantium totam rem aperiam eaque ipsa quae ab illo inventore veritatis etation quasi architecto beatae.',
     13, -- ID của tác giả
-    'images/blog/img-13.jpg', -- Đường dẫn đến hình ảnh
+    '../images/blog/img-13.jpg', -- Đường dẫn đến hình ảnh
     DEFAULT -- Giá trị mặc định cho views_
 ),
 (
@@ -361,7 +361,7 @@ Labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitatio
 
 Laborum sed ut perspiciatis unde omnis iste natus sit voluptatem accusantium doloremque laudantium totam rem aperiam eaque ipsa quae ab illo inventore veritatis etation quasi architecto beatae.',
     14, -- ID của tác giả
-    'images/blog/img-14.jpg', -- Đường dẫn đến hình ảnh
+    '../images/blog/img-14.jpg', -- Đường dẫn đến hình ảnh
     DEFAULT -- Giá trị mặc định cho views_
 ),
 (
@@ -375,7 +375,7 @@ Labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitatio
 
 Laborum sed ut perspiciatis unde omnis iste natus sit voluptatem accusantium doloremque laudantium totam rem aperiam eaque ipsa quae ab illo inventore veritatis etation quasi architecto beatae.',
     15, -- ID của tác giả
-    'images/blog/img-15.jpg', -- Đường dẫn đến hình ảnh
+    '../images/blog/img-15.jpg', -- Đường dẫn đến hình ảnh
     DEFAULT -- Giá trị mặc định cho views_
 );
 ---Book
@@ -383,7 +383,7 @@ INSERT INTO tbl_Book (book_title, author_id, book_image_url, book_description_, 
 VALUES (
     'Where The Wild Things Are', -- Tiêu đề của sách
     1, -- ID của tác giả
-    'images/books/img-01.jpg', -- Đường dẫn đến ảnh bìa của sách
+    '../images/books/img-01.jpg', -- Đường dẫn đến ảnh bìa của sách
     'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.', -- Mô tả về sách
     'Sunshine Orlando', -- Nhà xuất bản
     'English', -- Ngôn ngữ
@@ -395,7 +395,7 @@ VALUES (
 (
 	 'Educated: A Memoir', -- Tiêu đề của sách
     1, -- ID của tác giả
-    'images/books/img-02.jpg', -- Đường dẫn đến ảnh bìa của sách
+    '../images/books/img-02.jpg', -- Đường dẫn đến ảnh bìa của sách
     '"Educated" là một cuốn hồi ký của Tara Westover, kể về cuộc sống của cô trong một gia đình mormon cực kỳ cứng rắn ở Idaho. Tara không được học hành chính thống, nhưng thông qua sự tự học và nỗ lực không ngừng, cô đã tự mình học được và sau đó tốt nghiệp đại học và cao học tại Đại học Harvard và Đại học Cambridge. Cuốn sách tường thuật về hành trình vượt qua nghịch cảnh và tìm kiếm sự giáo dục và tự do cá nhân của Tara.', -- Mô tả về sách
     'Sunshine Orlando', -- Nhà xuất bản
     'English', -- Ngôn ngữ
@@ -407,7 +407,7 @@ VALUES (
 (
 	 'The Great Gatsby', -- Tiêu đề của sách
     3, -- ID của tác giả
-    'images/books/img-03.jpg', -- Đường dẫn đến ảnh bìa của sách
+    '../images/books/img-03.jpg', -- Đường dẫn đến ảnh bìa của sách
     '"The Great Gatsby" là một câu chuyện kinh điển về cuộc sống ở thị trấn West Egg trên Long Island vào những năm 1920. Câu chuyện được kể qua góc nhìn của Nick Carraway, một nhân chứng về cuộc sống xa hoa và những khao khát đen tối của Jay Gatsby.',
     'Scribner', -- Nhà xuất bản
     'English', -- Ngôn ngữ
@@ -419,7 +419,7 @@ VALUES (
 (
 	 'To Kill a Mockingbird', -- Tiêu đề của sách
     4, -- ID của tác giả
-    'images/books/img-04.jpg', -- Đường dẫn đến ảnh bìa của sách
+    '../images/books/img-04.jpg', -- Đường dẫn đến ảnh bìa của sách
     '"To Kill a Mockingbird" là một tiểu thuyết kinh điển về sự phân biệt chủng tộc và sự nghèo đói ở Nam Hoa Kỳ trong những năm 1930. Câu chuyện được kể qua góc nhìn của Scout Finch, một cô bé ở thị trấn nhỏ Maycomb, Alabama, khi bố cô làm luật sư để bảo vệ một người đàn ông da đen bị cáo buộc giao cấu với một phụ nữ da trắng.',
     'J.B. Lippincott & Co.', -- Nhà xuất bản
     'English', -- Ngôn ngữ
@@ -431,7 +431,7 @@ VALUES (
 (
 	 'Pride and Prejudice', -- Tiêu đề của sách
     5, -- ID của tác giả
-    'images/books/img-05.jpg', -- Đường dẫn đến ảnh bìa của sách
+    '../images/books/img-05.jpg', -- Đường dẫn đến ảnh bìa của sách
     '"Pride and Prejudice" là một tiểu thuyết lãng mạn về tình yêu, gia đình và xã hội ở thế kỷ 19 ở Anh. Câu chuyện xoay quanh cuộc sống của Elizabeth Bennet, một cô gái thông minh và nhanh nhạy, khi cô đấu tranh với lòng tự trọng và sự định kiến xã hội.',
     'T. Egerton, Whitehall', -- Nhà xuất bản
     'English', -- Ngôn ngữ
@@ -443,7 +443,7 @@ VALUES (
 (
 	 'Harry Potter and the Sorcerer''s Stone', -- Tiêu đề của sách
     5, -- ID của tác giả
-    'images/books/img-06.jpg', -- Đường dẫn đến ảnh bìa của sách
+    '../images/books/img-06.jpg', -- Đường dẫn đến ảnh bìa của sách
     '"Pride and Prejudice" là một tiểu thuyết lãng mạn về tình yêu, gia đình và xã hội ở thế kỷ 19 ở Anh. Câu chuyện xoay quanh cuộc sống của Elizabeth Bennet, một cô gái thông minh và nhanh nhạy, khi cô đấu tranh với lòng tự trọng và sự định kiến xã hội.',
     ' Scholastic', -- Nhà xuất bản
     'English', -- Ngôn ngữ
@@ -455,7 +455,7 @@ VALUES (
 (
 	 'The Catcher in the Rye', -- Tiêu đề của sách
     7, -- ID của tác giả
-    'images/books/img-07.jpg', -- Đường dẫn đến ảnh bìa của sách
+    '../images/books/img-07.jpg', -- Đường dẫn đến ảnh bìa của sách
     '"The Catcher in the Rye" là một tiểu thuyết về tuổi trẻ và sự mất mát của ngây thơ. Câu chuyện được kể qua góc nhìn của Holden Caulfield, một thiếu niên cảm thấy loài người xung quanh đều giả dối và thiếu chân thành.',
     'Little, Brown and Company', -- Nhà xuất bản
     'English', -- Ngôn ngữ
@@ -467,7 +467,7 @@ VALUES (
 (
 	 'The Catcher in the Rye', -- Tiêu đề của sách
     7, -- ID của tác giả
-    'images/books/img-08.jpg', -- Đường dẫn đến ảnh bìa của sách
+    '../images/books/img-08.jpg', -- Đường dẫn đến ảnh bìa của sách
     '"The Catcher in the Rye" là một tiểu thuyết về tuổi trẻ và sự mất mát của ngây thơ. Câu chuyện được kể qua góc nhìn của Holden Caulfield, một thiếu niên cảm thấy loài người xung quanh đều giả dối và thiếu chân thành.',
     'Little, Brown and Company', -- Nhà xuất bản
     'English', -- Ngôn ngữ
@@ -479,7 +479,7 @@ VALUES (
 (
 	 'The Lord of the Rings', -- Tiêu đề của sách
     8, -- ID của tác giả
-    'images/books/img-09.jpg', -- Đường dẫn đến ảnh bìa của sách
+    '../images/books/img-09.jpg', -- Đường dẫn đến ảnh bìa của sách
     '"The Lord of the Rings" là một cuộc phiêu lưu kỳ diệu trải dài qua thế giới Middle-earth, xoay quanh chiến đấu giữa tốt và ác, sự tiêu diệt và hy vọng. Câu chuyện bắt đầu khi Frodo Baggins, một người hobbit, nhận được nhiệm vụ tiêu diệt chiếc nhẫn của Sauron.',
     'Allen & Unwin', -- Nhà xuất bản
     'English', -- Ngôn ngữ
@@ -491,7 +491,7 @@ VALUES (
 (
 	 'Animal Farm', -- Tiêu đề của sách
     10, -- ID của tác giả
-    'images/books/img-10.jpg', -- Đường dẫn đến ảnh bìa của sách
+    '../images/books/img-10.jpg', -- Đường dẫn đến ảnh bìa của sách
     '"Animal Farm" là một tiểu thuyết truyền cảm hứng về sự cải cách xã hội và quyền lực. Câu chuyện diễn ra tại một trang trại nông nghiệp, nơi các loài động vật lập ra một xã hội đa đảng và chống lại sự thống trị của con người.',
     'Secker and Warburg', -- Nhà xuất bản
     'English', -- Ngôn ngữ
@@ -503,7 +503,7 @@ VALUES (
 (
 	 'The Alchemist', -- Tiêu đề của sách
     10, -- ID của tác giả
-    'images/books/img-11.jpg', -- Đường dẫn đến ảnh bìa của sách
+    '../images/books/img-11.jpg', -- Đường dẫn đến ảnh bìa của sách
     '"The Alchemist" là một tiểu thuyết triết học về tình yêu, sự hiểu biết và cuộc sống. Câu chuyện theo chân Santiago, một chăn cừu ở Tây Ban Nha, trong cuộc hành trình đi tìm kiếm ngọc lục bảo và ý nghĩa thực sự của cuộc sống.',
     'HarperCollins', -- Nhà xuất bản
     'English', -- Ngôn ngữ
@@ -515,7 +515,7 @@ VALUES (
 (
 	 'The Chronicles of Narnia: The Lion, the Witch and the Wardrobe', -- Tiêu đề của sách
     12, -- ID của tác giả
-    'images/books/img-12.jpg', -- Đường dẫn đến ảnh bìa của sách
+    '../images/books/img-12.jpg', -- Đường dẫn đến ảnh bìa của sách
     '"The Chronicles of Narnia: The Lion, the Witch and the Wardrobe" là một cuốn sách truyền kỳ về cuộc phiêu lưu của bốn đứa trẻ trong thế giới ma thuật của Narnia. Cuốn sách khám phá chủ đề về lòng dũng cảm, lòng tin và sự kiên nhẫn.',
     'Geoffrey Bles', -- Nhà xuất bản
     'English', -- Ngôn ngữ
@@ -753,7 +753,11 @@ VALUES
 
 UPDATE tbl_Book_Detail
 SET discount = price/5
-WHERE price%3 = 0
+WHERE price >= 15
+
+UPDATE tbl_Book_Detail
+SET views_ = 30
+WHERE price >= 1
 
 GO
 
