@@ -58,7 +58,7 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-					<strong class="tg-logo"><a href="index-2.html"><img src="../images/logo.png" alt="company name here"></a></strong>
+							<strong class="tg-logo"><a asp-action="index" asp-controller="Home"><img src="../images/logo.png" alt="company name here"></a></strong>
 							<div class="tg-wishlistandcart">
 								<div class="dropdown tg-themedropdown tg-wishlistdropdown">
 									<a href="javascript:void(0);" id="tg-wishlisst" class="tg-btnthemedropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -733,13 +733,8 @@
 												</div>
 											</div>
 										</li>
-										<li class="menu-item-has-children current-menu-item">
-											<a href="javascript:void(0);">Home</a>
-											<ul class="sub-menu">
-												<li class="current-menu-item"><a href="index-2.html">Home V one</a></li>
-												<li><a href="indexv2.html">Home V two</a></li>
-												<li><a href="indexv3.html">Home V three</a></li>
-											</ul>
+										<li>
+											<a asp-action="index" asp-controller="Home">Home</a>
 										</li>
 										<li class="menu-item-has-children">
 											<a href="javascript:void(0);">Authors</a>
@@ -748,8 +743,8 @@
 												<li><a href="authordetail.html">Author Detail</a></li>
 											</ul>
 										</li>
-										<li><a href="products.html">Best Selling</a></li>
-										<li><a href="products.html">Weekly Sale</a></li>
+										<li><a asp-action="Index" asp-controller="Products">Best Selling</a></li>
+										<li><a asp-action="Index" asp-controller="Products">Weekly Sale</a></li>
 										<li class="menu-item-has-children">
 											<a href="javascript:void(0);">Latest News</a>
 											<ul class="sub-menu">
