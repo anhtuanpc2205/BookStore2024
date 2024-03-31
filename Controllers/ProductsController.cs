@@ -1,6 +1,7 @@
 ﻿using BookStore2024.Data;
 using BookStore2024.ViewModels;
 using Microsoft.AspNetCore.Mvc;
+using System.Security.Policy;
 
 namespace BookStore2024.Controllers
 {
@@ -26,7 +27,8 @@ namespace BookStore2024.Controllers
 				AuthorName = p.AuthorName,
 				Price = p.Price,
 				Discount = p.Discount,
-                FormatName = p.FormatName
+                FormatName = p.FormatName,
+                BookDetailId = p.BookDetailId
             });
 
             return View(data);
@@ -48,6 +50,42 @@ namespace BookStore2024.Controllers
                 Discount = p.Discount,
                 FormatName = p.FormatName
             });
+
+            return View(data);
+        }
+
+        public IActionResult Detail(int DetailId)
+        {
+            var record = DBContext.ViewBookDetails.Where(p => p.BookDetailId == DetailId).SingleOrDefault();
+            if (record == null)
+            {
+                TempData["Message"] = $"Không thấy sản phẩm có mã {DetailId}";
+                return Redirect("/404");
+            }
+            var data = new ProductVM
+            {   
+                BookDetailId = record.BookDetailId,
+                CategoryId = record.CategoryId,
+                CategoryName = record.CategoryName,
+                ProductName = record.BookTitle,
+                ProductImg = record.BookImageUrl ?? "",
+                AuthorName = record.AuthorName,
+                Price = record.Price,
+                Discount = record.Discount,
+                FormatId = record.FormatId,
+                FormatName = record.FormatName,
+                GenreName = record.GenreName,
+                GenreId = record.GenreId,
+                Publisher = record.Publisher,
+                ProductDescription = record.BookDescription,
+                Language = record.Language,
+                Pages = record.Pages,
+                IllustrationsNote = record.IllustrationsNote,
+                Isbn10 = record.Isbn10,
+                Isbn13 = record.Isbn13,
+                StockQuantity = record.StockQuantity,
+                Views = record.Views
+            };
 
             return View(data);
         }

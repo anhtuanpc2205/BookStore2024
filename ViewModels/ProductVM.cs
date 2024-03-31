@@ -2,10 +2,11 @@
 {
 	public class ProductVM
 	{
-		public string? ProductName { get; set; }
-        public int GenreId { get; set; }
-        public string GenreName { get; set; } = null!;
-        public string CategoryName { get; set; } = null!;
+        public int BookDetailId { get; set; }
+        public string? ProductName { get; set; }
+        public int? GenreId { get; set; }
+        public string? GenreName { get; set; } = null!;
+        public string? CategoryName { get; set; } = null!;
         public int CategoryId { get; set; }
         public decimal Price { get; set; }
 		public decimal? Discount { get; set; } = 0;
@@ -20,7 +21,7 @@
         public string? Isbn13 { get; set; }
         public int FormatId { get; set; } = 1;
         public string FormatName { get; set; } = null!;
-        public int StockQuantity { get; set; }
+        public int? StockQuantity { get; set; }
         public int? Views { get; set; }
 
     }

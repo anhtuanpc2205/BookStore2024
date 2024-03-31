@@ -834,6 +834,7 @@ GO
 CREATE VIEW ViewBookDetails
 AS
 SELECT 
+    BD.book_Detail_id,
     B.book_id,
     B.book_title,
     B.author_id,

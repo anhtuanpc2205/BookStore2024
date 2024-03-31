@@ -4,14 +4,17 @@
 <div class="col-xs-6 col-sm-6 col-md-4 col-lg-3">
     <div class="tg-postbook">
         <figure class="tg-featureimg">
-            <div class="tg-bookimg">
-                <div class="tg-frontcover"><img src="@Model.ProductImg" alt="ProductImg"></div>
-                <div class="tg-backcover"><img src="@Model.ProductImg" alt="ProductImg"></div>
-            </div>
-            <a class="tg-btnaddtowishlist" href="javascript:void(0);">
-                <i class="icon-heart"></i>
-                <span>add to wishlist</span>
+            <a asp-action="Detail" asp-controller="Products" asp-route-DetailId="@Model.BookDetailId">
+                <div class="tg-bookimg">
+                    <div class="tg-frontcover"><img src="@Model.ProductImg" alt="ProductImg"></div>
+                    <div class="tg-backcover"><img src="@Model.ProductImg" alt="ProductImg"></div>
+                </div>
             </a>
+                <a class="tg-btnaddtowishlist" href="javascript:void(0);">
+                    <i class="icon-heart"></i>
+                    <span>add to wishlist</span>
+                </a>
+            
         </figure>
         <div class="tg-postbookcontent">
             <ul class="tg-bookscategories">
@@ -24,7 +27,11 @@
                 </div>
             }
             <div class="tg-booktitle">
-                <h3><a href="javascript:void(0);">@Model.ProductName - [@Model.FormatName]</a></h3>
+                <h3>
+                    <a asp-action="Detail" asp-controller="Products" asp-route-DetailId="@Model.BookDetailId">
+                        @Model.ProductName - [@Model.FormatName]
+                    </a>
+                </h3>
             </div>
             <span class="tg-bookwriter">By: <a href="javascript:void(0);">@Model.AuthorName</a></span>
             <span class="tg-stars"><span></span></span>

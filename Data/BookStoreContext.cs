@@ -346,7 +346,7 @@ public partial class BookStoreContext : DbContext
             entity
                 .HasNoKey()
                 .ToView("ViewBookDetails");
-
+            entity.Property(e => e.BookDetailId).HasColumnName("Book_Detail_id");
             entity.Property(e => e.AuthorDescription).HasColumnName("author_description_");
             entity.Property(e => e.AuthorId).HasColumnName("author_id");
             entity.Property(e => e.AuthorName)
