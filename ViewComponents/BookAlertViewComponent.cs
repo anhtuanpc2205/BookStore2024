@@ -2,6 +2,7 @@
 using BookStore2024.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.VisualStudio.Web.CodeGenerators.Mvc.Templates.BlazorIdentity.Pages;
+using NuGet.Versioning;
 
 namespace BookStore2024.ViewComponents
 {
@@ -20,7 +21,7 @@ namespace BookStore2024.ViewComponents
                 AuthorName = BA.AuthorName,
                 Price = BA.Price,
                 Discount = BA.Discount
-            });
+            }).FirstOrDefault();
             return View("Default",data);
         }
     }
