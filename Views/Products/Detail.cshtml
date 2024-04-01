@@ -40,7 +40,10 @@
                             <ins>$@Model.Price</ins>
                         }
                     </span>
-                    <span class="tg-bookwriter">You save: $@Model.Discount</span>
+                    @if (Model.Discount != 0)
+                    {
+                        <span class="tg-bookwriter">You save: $@Model.Discount</span>
+                    }
                     <ul class="tg-delevrystock">
                         <li><i class="icon-rocket"></i><span>Free delivery worldwide</span></li>
                         <li><i class="icon-checkmark-circle"></i><span>Dispatch from the USA in 2 working days </span></li>

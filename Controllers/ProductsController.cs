@@ -41,6 +41,7 @@ namespace BookStore2024.Controllers
             }
             var data = ProductsQuery.Select(p => new ProductVM
             {
+                BookDetailId = p.BookDetailId,
                 CategoryId = p.CategoryId,
                 CategoryName = p.CategoryName,
                 ProductName = p.BookTitle,

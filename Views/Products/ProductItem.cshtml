@@ -46,9 +46,9 @@
                     <ins>$@Model.Price</ins>
                 }
             </span>
-            <a class="tg-btn tg-btnstyletwo" href="javascript:void(0);">
+            <a class="tg-btn tg-btnstyletwo" asp-action="AddtoCart" asp-controller="Cart" asp-route-productDetailId="@Model.BookDetailId">
                 <i class="fa fa-shopping-basket"></i>
-                <em>Add To Basket</em>
+                <em>Add To Cart</em>
             </a>
         </div>
     </div>
