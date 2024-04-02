@@ -257,10 +257,25 @@ jQuery(document).on('ready', function() {
 	/*------------------------------------------
 			PRODUCT INCREASE
 	------------------------------------------*/
+	// Product Quantity
+	$('.quantity button').on('click', function () {
+		var button = $(this);
+		var oldValue = button.parent().parent().find('input').val();
+		if (button.hasClass('btn-plus')) {
+			var newVal = parseFloat(oldValue) + 1;
+		} else {
+			if (oldValue > 0) {
+				var newVal = parseFloat(oldValue) - 1;
+			} else {
+				newVal = 0;
+			}
+		}
+		button.parent().parent().find('input').val(newVal);
+	});
 	jQuery('em.minus').on('click', function () {
 		jQuery('#quantity1').val(parseInt(jQuery('#quantity1').val(), 10) - 1);
 	});
 	jQuery('em.plus').on('click', function () {
 		jQuery('#quantity1').val(parseInt(jQuery('#quantity1').val(), 10) + 1);
 	});
-});
+})(jQuery);

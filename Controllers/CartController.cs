@@ -40,7 +40,7 @@ namespace BookStore2024.Controllers
 
                 Cart.Add(item);
             }
-            else { }
+            else { } // nếu tồn tại rồi thì thôi
             HttpContext.Session.Set(Constants.SESSION_KEY, Cart);
 
             return RedirectToAction("Index");

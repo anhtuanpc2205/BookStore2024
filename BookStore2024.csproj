@@ -7,10 +7,15 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Remove="wwwroot\Views\Shared\_MainLayout.cshtml.css" />
+  </ItemGroup>
+
+  <ItemGroup>
     <None Include="wwwroot\lib\lightbox\js\lightbox.min.js" />
     <None Include="wwwroot\lib\owlcarousel\LICENSE" />
     <None Include="wwwroot\lib\owlcarousel\owl.carousel.js" />
     <None Include="wwwroot\lib\owlcarousel\owl.carousel.min.js" />
+    <None Include="wwwroot\Views\Shared\_MainLayout.cshtml.css" />
   </ItemGroup>
 
   <ItemGroup>
