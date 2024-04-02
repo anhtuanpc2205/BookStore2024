@@ -60,7 +60,7 @@ namespace BookStore2024.Controllers
             var record = DBContext.ViewBookDetails.Where(p => p.BookDetailId == DetailId).SingleOrDefault();
             if (record == null)
             {
-                TempData["Message"] = $"Không thấy sản phẩm có mã {DetailId}";
+                TempData["Message"] = $"Could not find product have id: {DetailId} or product does not exist";
                 return Redirect("/404");
             }
             var data = new ProductVM
